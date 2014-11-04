@@ -36,6 +36,7 @@ def get_next_state(current_state, act):
         return state_get.get(act).get("next_state")
     else:
         print("invalid current_state or input.")
+        return None
 
 for current_state in ("locked", "unlocked", "unknown"):
     for act in ("coin", "push", "unknown"):
